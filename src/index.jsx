@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
-import Home from './pages/home';
 import Documentation from './pages/documentation';
 import './index.scss';
 
@@ -11,9 +10,9 @@ class App extends React.Component {
     return (
       <HashRouter>
         <Switch>
+          <Redirect exact from="/" to="/docs/installation.md" />
           <Redirect exact from="/docs" to="/docs/installation.md" />
           <Redirect exact from="/docs/" to="/docs/installation.md" />
-          <Route exact path="/" component={Home} />
           <Route path="/docs/*" component={Documentation} />
         </Switch>
       </HashRouter>

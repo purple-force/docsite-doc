@@ -8,7 +8,6 @@ import Language from '../../components/language';
 import Header from '../../components/header';
 import Bar from '../../components/bar';
 import Sidemenu from '../../components/sidemenu';
-import Footer from '../../components/footer';
 import siteConfig from '../../../site_config/site';
 import docsConfig from '../../../site_config/docs';
 import docsData from '../../../md_json/docs.json';
