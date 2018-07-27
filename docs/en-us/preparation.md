@@ -1,6 +1,7 @@
-## 站点准备
+## Preparation
 
-在成功安装完`docsite`之后，进入项目根目录，执行`docsite init`，生成的目录如下结构：
+After successfully installing `docsite`,go to the project root directory and execute `docsite init`. The generated directory is as follows:
+
 
 ```
 |-- Project root
@@ -147,38 +148,38 @@
         |-- index.js
  ```
  
- 现从上至下对主要的文件、文件夹作说明。
+ Now let's have a brief introduction to the main files and folders from up and down.
  
  ### .docsite
  
- 空文件，用作判断当前项目是否已初始化过。
+An empty file that is used to determine if the current project has been initialized.
  
  ### index.html
  
- 项目的承载页面。
+The hosting page of the project.
  
  ### blog
  
- 存放博客的markdown文档及相关图片资源的目录，分为中、英文两个目录。
+ The directory of the markdown document and related image resources of the blog ,which has two directories, for Chinese and English.
  
   ### docs
  
- 存放说明文档的markdown文档及相关图片资源的目录，分为中、英文两个目录。
+ The directory of the markdown document and related image resources of the docs ,which has two directories, for Chinese and English.
  
  ### img
  
- 存放非markdown使用的一些站点的图片，其中`system`中存放一些业务无关的图片。
+ Store some images of site that are not used by markdown, where `system` stores some business-independent images.
  
  ### md_json
  
- 存放解析markdown文档结果的json文件。
+ Store the json file of parseing result of the markdown document.
  
  ### site_config
  
- 存放整个站点的中英文配置数据，其中`site.js`配置全局的一些数据，包括顶部的菜单栏和底部的页脚部分。`home.jsx`、`docs.js`、`blog.js`、`community.jsx`分别对应首页、文档页、博客列表页、社区页的配置。
+ Store Chinese and English configuration data for the entire site, where `site.js` configures some global data, including the top menu and the bottom footer portion. `home.jsx`, `docs.js`, `blog.js`, `community.jsx` correspond to the configuration of the home page, document page, blog list page, and community page respectively.
  
  ### src
  
- 存放源码的位置，其中`index.jsx`为主入口文件，`markdown.scss`为markdown文档的样式文件，`variable.scss`为一些公共scss变量，`components`为公共组件，`pages`为对应站点的不同页面，`utils`中存放一些公共方法。
+ The location where the source code is stored, where `index.jsx` is the main entry file, `markdown.scss` stores the style file for the markdown document, `variable.scss` stores the public scss variable, `components` stores the public component, and `pages` stores the different pages of the site, `utils` stores some public methods.
  
- 现在网站的骨架搭建完成，可以进行网站的自定义和内容填充了。
+ Now that the skeleton of the website is set up, you can customize the content and fill in the content.

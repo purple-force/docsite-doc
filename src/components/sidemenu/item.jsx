@@ -6,13 +6,13 @@ import classnames from 'classnames';
 export default class Item extends React.Component {
   constructor(props) {
     super(props);
-    const { item } = props;
+    const { item, location } = props;
     const hasChildren = item.children && item.children.length;
     let opened = props.item.opened;
     if (hasChildren) {
       if (opened === undefined) {
         // 未配置展开，则是否展开由是否选中决定
-        opened = item.children.find(child => child.link === window.location.hash.split('?')[0].slice(1));
+        opened = item.children.find(child => child.link === location.pathname);
       }
     } else {
       opened = false;
@@ -45,7 +45,7 @@ export default class Item extends React.Component {
             className={classnames({
               'menu-item': true,
               'menu-item-level-3': true,
-              'menu-item-selected': item.link === window.location.hash.split('?')[0].slice(1),
+              'menu-item-selected': item.link === this.props.location.pathname,
             })}
             key={index}
             onClick={this.onItemClick}
@@ -59,13 +59,13 @@ export default class Item extends React.Component {
   }
 
   render() {
-    const { item } = this.props;
+    const { item, location } = this.props;
     const hasChildren = item.children && item.children.length;
     const { opened } = this.state;
     const cls = classnames({
       'menu-item': true,
       'menu-item-level-2': true,
-      'menu-item-selected': item.link === window.location.hash.split('?')[0].slice(1),
+      'menu-item-selected': item.link === location.pathname,
     });
     const style = {
       height: opened ? (36 * item.children.length) + 48 : 48,
@@ -77,7 +77,7 @@ export default class Item extends React.Component {
         {
           <span>
             {item.title}
-            <img style={{ transform: `rotate(${opened ? 0 : -90}deg)` }} className="menu-toggle" src="./img/system/arrow_down.png" />
+            <img style={{ transform: `rotate(${opened ? 0 : -90}deg)` }} className="menu-toggle" src={`${window.imgRootPath}img/system/arrow_down.png`} />
           </span>
         }
         {this.renderSubMenu(item.children)}

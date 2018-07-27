@@ -1,14 +1,14 @@
-## 重定向
+## Redirect
 
-有时候，你希望在用户访问某些url的时候，能够跳转到另一个特定的地址。
-这些跳转的配置过程如下：
-1. 打开`src`目录下的`index.jsx`文件，找到类似如下的代码：
+Sometimes you want to redirect to another specific address when the user accesses certain urls.
+The configuration for these redirection is as follows:
+1. Open the `index.jsx` file in the `src` directory and find something like this:
 
 ```jsx
 <Redirect exact from="/docs" to="/docs/installation.md" />
 <Redirect exact from="/docs/" to="/docs/installation.md" />
 ```
 
-2. 修改或添加对应的跳转规则。其中`from`指待跳转的地址，`to`指跳转后的地址
+2. Modify or add the corresponding redirection rule, where `from` refers to the address to be redirected, `to` refers to the address after the redirection
 
-整个工程采用hash路由，因此`from`和`to`的值最终会作为hash值在地址栏上体现，请以`/`作为开始。
+The entire project uses hash routing, so the values of `from` and `to` will eventually be reflected as hash values on the address bar. Start with `/` please.

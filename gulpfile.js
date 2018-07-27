@@ -65,12 +65,13 @@ gulp.task('webpack-dev-server', () => {
   // modify some webpack config options
   const myConfig = Object.create(webpackConfig);
   myConfig.plugins.push(new webpack.SourceMapDevToolPlugin({}));
-  myConfig.plugins.push(new webpack.HotModuleReplacementPlugin({}));
   // Start a webpack-dev-server
   new WebpackDevServer(webpack(myConfig), {
     publicPath: myConfig.output.publicPath,
-    hot: true,
-    inline: true,
+    historyApiFallback: {
+      disableDotRule: true,
+      index: '/index.html'
+    },
     stats: {
       colors: true
     }

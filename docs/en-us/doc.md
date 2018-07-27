@@ -1,8 +1,8 @@
-## 文档编写
+## Document writing
 
-### 元数据
+### Metadata
 
-markdown文件均支持在文档顶部自定义元数据，顶部的`---`（至少三个`-`）之间的数据会被认为是元数据，一个key占用一行。这些数据解析后会对应存放在`md_json`文件夹下，blog的文档对应`blog.json`文件，docs下的文档对应`docs.json`文件，其中`filename`和`__html`为保留字段，请勿使用。
+The markdown file supports custom metadata at the top of the document. The data between the top `---` (at least three `-`) is considered to be metadata, and one key occupies one line. After parsing the data, it will be stored in the `md_json` folder. The blog's document corresponds to the `blog.json` file. The document under docs corresponds to the `docs.json` file, where `filename` and `__html` are reserved fields. Do not use them.
 
 ```
 ---
@@ -11,10 +11,10 @@ key2: world
 ---
 ```
 
-### 路径
+### Path
 
-在编写markdown文档时，难免需要文档之间的相互引用。而相对地址的写法相比于绝对地址，对于站点内文档之间的引用显得更为便捷。
+When writing a markdown document, it is inevitable that mutual references between documents are required. The relative path is written more easily than the absolute path, and the reference between the documents in the site is more convenient.
 
-当需要引用其他文档时，引用路径按照在项目目录的相对文件地址引用即可。
+When you need to reference other documents, the reference path can be referenced by the relative file path in the project directory.
 
-同样的，当需要引用项目内的图片资源，引用路径同样是相对的文件地址。最终会被处理成正确的绝对地址。
+Similarly, when you need to reference an image resource within a project, the reference path is also a relative file path. It will eventually be processed into the correct absolute path.

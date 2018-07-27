@@ -1,10 +1,10 @@
-## 安装
+## Installation
 
-docsite用于根据markdown文档快速搭建静态站点。
+`docsite` is used to quickly build static sites based on markdown documents.
 
-1. 确保安装的[node](https://nodejs.org/en/download/)版本满足如下要求：`node >= 8.6.0`
-2. 执行`npm install docsite -g`执行全局安装
+1. Make sure the version of your [node](https://nodejs.org/en/download/) meets the requirement of `node >= 8.6.0`
+2. run `npm install docsite -g` to install `dociste` globally
 
-## 验证安装
+## Verification
 
-在终端中执行 `docsite -V`，能够显示当前安装的`docsite`版本，则表示安装成功。
+Run `docsite -V` in your terminal,seeing the version of `docsite` means that it is installed successfully.

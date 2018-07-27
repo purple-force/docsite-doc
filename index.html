@@ -6,19 +6,37 @@
 	<!-- 网页标签标题 -->
 	<title>Docsite</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<!-- 网页标签ico -->
-	<link rel="icon" href="./img/docsite.ico">
-	<link type="text/css" rel="stylesheet" href="./build/page.css" />
 </head>
-
 <body>
 	<div id="root"></div>
-	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/markdown-it@8.3.1/dist/markdown-it.min.js"></script>
 	<script src="https://f.alicdn.com/react/15.4.1/react-with-addons.min.js"></script>
 	<script src="https://f.alicdn.com/react/15.4.1/react-dom.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/react-router-dom@4.2.2/umd/react-router-dom.min.js"></script>
-	<script src="./build/page.js"></script>
+	<script>
+		// see https://www.smashingmagazine.com/2016/08/sghpa-single-page-app-hack-github-pages/
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+		})();
+		
+		window.jsRootPath = '/docsite-doc/'; // 部署到github上的根路径，请以'/'开头和结尾
+		if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+			window.imgRootPath = '/';
+		} else {
+			window.imgRootPath = window.jsRootPath;
+		}
+		// 加载ico
+		var link = document.createElement('link');
+		link.rel = 'shortcut icon';
+		link.href = window.imgRootPath + 'img/docsite.ico';
+		document.querySelector('head').appendChild(link);
+		// 加载js
+		var script = document.createElement('script');
+		script.src = window.jsRootPath + 'build/page.js';
+		document.querySelector('body').appendChild(script);
+	</script>
 </body>
-
 </html>

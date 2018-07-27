@@ -31,21 +31,20 @@ class Documentation extends Language {
     const filename = this.props.match.url.split('?')[0].split('/').slice(2).join('/');
     // 获取当前文档所在的部分的相对路径，除去文件名
     const relativePath = filename.split('/').slice(0, -1).join('/');
-    const hashSearch = window.location.hash.split('?');
-    const search = qs.parse(hashSearch[1] || '');
+    const search = qs.parse(this.props.location.search.slice(1) || '');
     const language = search.lang || cookie.get('docsite_language') || siteConfig.defaultLanguage;
     const imgs = Array.from(this.markdownContainer.querySelectorAll('img'));
     const alinks = Array.from(this.markdownContainer.querySelectorAll('a'));
     imgs.forEach((img) => {
       const src = img.getAttribute('src');
       if (relativeReg.test(src)) {
-        img.src = `${window.location.protocol}//${window.location.host}${path.join(window.location.pathname, './docs', language, relativePath, src)}`;
+        img.src = `//${window.location.host}/${path.join('./docs', language, relativePath, src)}`;
       }
     });
     alinks.forEach((alink) => {
       const href = alink.getAttribute('href');
       if (relativeReg.test(href)) {
-        alink.href = `${window.location.protocol}//${window.location.host}${window.location.pathname}${window.location.search}#/${path.join('./docs', relativePath, href)}`;
+        alink.href = `//${window.location.host}/${path.join('./docs', language, relativePath, href)}`;
       }
     });
     this.markdownContainer.addEventListener('click', (e) => {
@@ -67,8 +66,7 @@ class Documentation extends Language {
   }
 
   render() {
-    const hashSearch = window.location.hash.split('?');
-    const search = qs.parse(hashSearch[1] || '');
+    const search = qs.parse(this.props.location.search.slice(1) || '');
     const language = search.lang || cookie.get('docsite_language') || siteConfig.defaultLanguage;
     // 同步cookie和search上的语言版本
     if (language !== cookie.get('docsite_language')) {
@@ -83,10 +81,10 @@ class Documentation extends Language {
     const __html = md && md.__html ? md.__html : '';
     return (
       <div className="documentation-page">
-        <Header type="normal" logo="./img/docsite.png" language={language} onLanguageChange={this.onLanguageChange} />
-        <Bar img="./img/system/docs.png" text={dataSource.barText} />
+        <Header type="normal" logo={`${window.imgRootPath}img/docsite.png`} location={this.props.location} language={language} onLanguageChange={this.onLanguageChange} />
+        <Bar img={`${window.imgRootPath}img/system/docs.png`} text={dataSource.barText} />
         <section className="content-section">
-          <Sidemenu dataSource={dataSource.sidemenu} />
+          <Sidemenu dataSource={dataSource.sidemenu} location={this.props.location} />
           <div
             className="doc-content markdown-body"
             ref={(node) => { this.markdownContainer = node; }}

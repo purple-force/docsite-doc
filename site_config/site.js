@@ -5,7 +5,7 @@ export default {
     pageMenu: [
       {
         text: 'DOCS',
-        link: '/docs/demo1.md',
+        link: '/docs/installation.md',
       },
     ],
   },

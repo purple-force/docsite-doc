@@ -66,7 +66,7 @@ class Header extends React.Component {
   }
 
   render() {
-    const { type, logo, onLanguageChange } = this.props;
+    const { type, logo, onLanguageChange, location } = this.props;
     const { menuBodyVisible, language } = this.state;
     return (
       <header
@@ -108,7 +108,7 @@ class Header extends React.Component {
             <img
               className="header-menu-toggle"
               onClick={this.toggleMenu}
-              src={type === 'primary' ? './img/system/menu_white.png' : './img/system/menu_gray.png'}
+              src={type === 'primary' ? `${window.imgRootPath}img/system/menu_white.png` : `${window.imgRootPath}img/system/menu_gray.png`}
             />
             <ul>
               {siteConfig[language].pageMenu.map(item => (
@@ -116,7 +116,7 @@ class Header extends React.Component {
                   className={classnames({
                     'menu-item': true,
                     [`menu-item-${type}`]: true,
-                    [`menu-item-${type}-active`]: window.location.hash.split('?')[0].slice(1).split('/')[1] === item.link.split('/')[1],
+                    [`menu-item-${type}-active`]: location.pathname === item.link,
                   })}
                 >
                   <Link to={item.link}>{item.text}</Link>

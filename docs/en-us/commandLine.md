@@ -1,19 +1,19 @@
-## 命令行使用
+## Command line
 
-`docsite`集成的主要命令只有三个，主要如下：
+The main commands of `docsite` are only three, mainly as follows:
 
 ### `docsite init`
 
-在项目根目录下执行该命令，会在目录下初始化一个站点开发模板并安装好相关依赖。
+Executing this command in the project root directory will initialize a site development template and install related dependencies in the directory.
 
 ### `docsite start`
 
-执行该命令，会在本地启动一个开发服务器，端口号为`8080`。同时会在浏览器中自动打开该页面。在开发过程中，修改源代码包括markdown文档时，会自动进行编译，刷新浏览器即可看到更新后的结果。
+Executing this command will start a development server locally with the port number `8080`. This page will also be automatically opened in the browser. During the development, when the source code is modified, including the markdown document, it will be automatically compiled. After refreshing the browser, you can see the updated result.。
 
 ### `docsite build`
 
-待本地开发完成后，运行该命令，将对源码和markdown文档进行编译和构建，生成构建后的文件。
+After the local development is completed, run this command to compile and build the source code and markdown document to generate the build file.
 
-### 其他
+### Others
 
-执行`docsite -h`获取更多命令的使用
+Execute `docsite -h` for more commands

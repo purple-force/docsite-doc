@@ -31,7 +31,7 @@ your markdown content
 
 1. 如果想增加页面，在`pages`目录下增加相应的页面，并在`src`目录下的`index.jsx`文件中配置对应的路由，同步在`site_config`文件夹下增加对应的页面配置
 2. 如果想修改页面，在`pages`目录下针对修改对应的页面，并同步修改`site_config`文件夹下对应的页面配置
-3. 如果想删除页面，在`pages`目录下增加相应的页面，并在`src`目录下的`index.jsx`文件中删除对应的路由，同步在`site_config`文件夹下删除对应的页面配置
+3. 如果想删除页面，在`pages`目录下删除相应的页面，并在`src`目录下的`index.jsx`文件中删除对应的路由，同步在`site_config`文件夹下删除对应的页面配置
 4. 如果想修改站点的整体色调，请修改`src`目录下的`variables.scss`
 5. 如果想修改markdown文档的样式，请修改`src`目录下的`markdown.scss`
 

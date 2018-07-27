@@ -20,7 +20,7 @@ export default class SideMenu extends React.Component {
   }
 
   render() {
-    const { dataSource } = this.props;
+    const { dataSource, location } = this.props;
     const { menuBodyVisible } = this.state;
     const cls = classnames({
       sidemenu: true,
@@ -44,7 +44,7 @@ export default class SideMenu extends React.Component {
                   {data.title}
                   </span>
                   <ul>
-                    {data.children.map((item, j) => <Item item={item} key={j} toggleMenuBody={this.toggleMenuBody} />)}
+                    {data.children.map((item, j) => <Item item={item} key={j} toggleMenuBody={this.toggleMenuBody} location={location} />)}
                   </ul>
                 </li>
               );

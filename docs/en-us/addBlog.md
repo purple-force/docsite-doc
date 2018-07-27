@@ -1,11 +1,11 @@
-## 添加博客
+## Add blog
 
-### 放置位置
+### Where
 
-根据文档对应的语言版本，放入`blog`目录下的`zh-cn`或者`en-us`，可以是一层或者多层目录。
+According to the language version of the document, put `zh-cn` or `en-us` in the `blog` directory, which can be one-level or multi-level directories.
 
-### 博客列表页配置
+### Configuration of Blog list page
 
-文档放入对应语言的目录中后，需要在`site_config/blog.js`中配置。其中的`link`字段用于配置访问地址，格式为`/blog/path-to-the-md`，需要注意的是这个路径不要包括语言路径（`zh-cn`或`en-us`）。
+After the document is placed in the directory of the corresponding language, it needs to be configured in `site_config/blog.js`. The `link` field is used to configure the access path in the format of `/blog/path-to-the-md`. Note that this path does not include the language path (`zh-cn` or `en-us`). .
 
-例如，某个博客的存放位置为`root_directory/blog/en/demo/xxx.md`，那么`link`字段的配置值为`/blog/demo/xxx.md`。
+For example, if a blog is stored in `root_directory/blog/en-us/demo/xxx.md`, then the configuration value of the `link` field is `/blog/demo/xxx.md`.

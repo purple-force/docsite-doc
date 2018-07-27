@@ -1,21 +1,21 @@
-## 自定义样式
+## Custom style
 
-自定义样式分为整个站点的自定义和文档展示风格的自定义。
+Custom styles are divided into customizations for the entire site and customization of document presentation styles.
 
-### 站点自定义
+### Site customization
 
-`src`目录下的`variables.scss`文件中，定义了一些用于控制站点整体显示风格的一些scss变量。通过修改这些变量，能够获得不同风格的站点。
+The `variables.scss` file in the `src` directory defines some scss variables that control the overall display style of the site. By modifying these variables, you can get different styles of sites.
 
-当然，如果这样还觉得不满足需求，可以进入到每个具体的页面的样式文件中去修改。
+Of course, if you still feel not satisfied , you can go to the style file of each specific page to modify it.
 
-### 文档展示风格自定义
+### Document style customization
 
-`src`目录下的`markdown.scss`文件中，定义了文档展示风格的样式。分为两部分，文档的展示和代码高亮的展示。
+The `markdown.scss` file in the `src` directory defines the style of the document style, which is divided into two parts, the presentation of the document and the highlighting of the code.
 
-+ 文档的展示
++ document
 
-默认采用github风格[https://github.com/sindresorhus/github-markdown-css](https://github.com/sindresorhus/github-markdown-css)，如果想要其他风格，请修改`markdown.scss`文件。
+Github style [https://github.com/sindresorhus/github-markdown-css](https://github.com/sindresorhus/github-markdown-css) is by default , if you want other styles, please modify `markdown.scss` file.
 
-+ 代码高亮
++ Code highlight
 
-在[https://highlightjs.org/static/demo/](https://highlightjs.org/static/demo/)中去选择喜爱的高亮配色，然后根据选择后的主题名称，在[https://github.com/isagalaev/highlight.js/tree/master/src/styles](https://github.com/isagalaev/highlight.js/tree/master/src/styles)中复制对应的样式文件到`markdown.scss`中即可。
+In [https://highlightjs.org/static/demo/](https://highlightjs.org/static/demo/), select your favorite highlight color, and then according to the selected theme name, in [https: //github.com/isagalaev/highlight.js/tree/master/src/styles](https://github.com/isagalaev/highlight.js/tree/master/src/styles) copy the corresponding style code to the `markdown.scss`.
