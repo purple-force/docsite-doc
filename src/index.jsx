@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import asyncComponent from './components/asyncComponent';
 import './index.scss';
+console.log('开始')
 // webpack 2.6.0以后，支持使用注释的方式给动态导入的模块添加chunk name
 const Documentation = asyncComponent(() => {
   console.log('hello')
@@ -10,7 +11,7 @@ const Documentation = asyncComponent(() => {
   /* webpackChunkName: "docs" */
   './pages/documentation'
 )});
-
+console.log('结束')
 class App extends React.Component {
   render() {
     // 最后两个未用模板参数的原因是路径深度不一定
