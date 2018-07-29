@@ -1,5 +1,7 @@
-// 全局的一些配置，包括页面顶部导航栏和页面底部的一些配置
-export default {
+// 全局的一些配置
+module.exports = {
+  title: 'docsite-doc', // 网页标签的标题
+  rootPath: '/docsite-doc', // 发布到服务器的根目录，需以/开头但不能有尾/
   defaultLanguage: 'zh-cn',
   'en-us': {
     pageMenu: [

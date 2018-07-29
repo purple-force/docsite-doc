@@ -81,8 +81,8 @@ class Documentation extends Language {
     const __html = md && md.__html ? md.__html : '';
     return (
       <div className="documentation-page">
-        <Header type="normal" logo={`${window.imgRootPath}img/docsite.png`} location={this.props.location} language={language} onLanguageChange={this.onLanguageChange} />
-        <Bar img={`${window.imgRootPath}img/system/docs.png`} text={dataSource.barText} />
+        <Header type="normal" logo={`${window.rootPath}/img/docsite.png`} location={this.props.location} language={language} onLanguageChange={this.onLanguageChange} />
+        <Bar img={`${window.rootPath}/img/system/docs.png`} text={dataSource.barText} />
         <section className="content-section">
           <Sidemenu dataSource={dataSource.sidemenu} location={this.props.location} />
           <div

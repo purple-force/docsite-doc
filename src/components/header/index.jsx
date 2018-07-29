@@ -108,7 +108,7 @@ class Header extends React.Component {
             <img
               className="header-menu-toggle"
               onClick={this.toggleMenu}
-              src={type === 'primary' ? `${window.imgRootPath}img/system/menu_white.png` : `${window.imgRootPath}img/system/menu_gray.png`}
+              src={type === 'primary' ? `${window.rootPath}/img/system/menu_white.png` : `${window.rootPath}/img/system/menu_gray.png`}
             />
             <ul>
               {siteConfig[language].pageMenu.map(item => (

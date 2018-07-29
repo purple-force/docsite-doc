@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- 网页标签标题 -->
-	<title>docsite-doc</title>
-	<link rel="shortcut icon" href="/docsite-doc/img/docsite.ico"/>
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.customVar.rootPath %>/img/docsite.ico"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
@@ -23,8 +23,8 @@
       }
 		})();
 		
-		window.rootPath = '/docsite-doc';
+		window.rootPath = '<%= htmlWebpackPlugin.options.customVar.rootPath %>';
   </script>
-	<script src="/docsite-doc/build/page.js"></script>
+	<script src="<%= htmlWebpackPlugin.options.customVar.rootPath %>/build/page.js"></script>
 </body>
 </html>

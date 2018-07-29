@@ -7,7 +7,6 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'build'),
-    publicPath: '/docsite-doc/build/', // 设置为站点的根路径 + build
     filename: '[name].js',
     chunkFilename: '[name].js',
   },

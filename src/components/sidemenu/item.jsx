@@ -77,7 +77,7 @@ export default class Item extends React.Component {
         {
           <span>
             {item.title}
-            <img style={{ transform: `rotate(${opened ? 0 : -90}deg)` }} className="menu-toggle" src={`${window.imgRootPath}img/system/arrow_down.png`} />
+            <img style={{ transform: `rotate(${opened ? 0 : -90}deg)` }} className="menu-toggle" src={`${window.rootPath}/img/system/arrow_down.png`} />
           </span>
         }
         {this.renderSubMenu(item.children)}
