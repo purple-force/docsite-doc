@@ -1,0 +1,4 @@
+{
+  "filename": "redirect.md",
+  "__html": "<h2>重定向</h2>\n<p>有时候，你希望在用户访问某些url的时候，能够跳转到另一个特定的地址。\n这些跳转的配置过程如下：</p>\n<ol>\n<li>打开<code>src</code>目录下的<code>index.jsx</code>文件，找到类似如下的代码：</li>\n</ol>\n<pre><code class=\"language-jsx\">&lt;Redirect exact <span class=\"hljs-keyword\">from</span>=<span class=\"hljs-string\">\"/docs\"</span> to=<span class=\"hljs-string\">\"/docs/installation.md\"</span> /&gt;\n<span class=\"xml\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">Redirect</span> <span class=\"hljs-attr\">exact</span> <span class=\"hljs-attr\">from</span>=<span class=\"hljs-string\">\"/docs/\"</span> <span class=\"hljs-attr\">to</span>=<span class=\"hljs-string\">\"/docs/installation.md\"</span> /&gt;</span>\n</span></code></pre>\n<ol start=\"2\">\n<li>修改或添加对应的跳转规则。其中<code>from</code>指待跳转的地址，<code>to</code>指跳转后的地址</li>\n</ol>\n<p>整个工程采用hash路由，因此<code>from</code>和<code>to</code>的值最终会作为hash值在地址栏上体现，请以<code>/</code>作为开始。</p>\n"
+}

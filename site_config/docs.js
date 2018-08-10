@@ -6,19 +6,19 @@ export default {
         children: [
           {
             title: 'Installation',
-            link: '/docs/installation.md',
+            link: '/en-us/docs/installation.html',
           },
           {
             title: 'Preparation',
-            link: '/docs/preparation.md',
+            link: '/en-us/docs/preparation.html',
           },
           {
             title: 'Create site',
-            link: '/docs/create.md',
+            link: '/en-us/docs/create.html',
           },
           {
             title: 'Publish site',
-            link: '/docs/publish.md',
+            link: '/en-us/docs/publish.html',
           },
         ],
       },
@@ -27,31 +27,31 @@ export default {
         children: [
           {
             title: 'Command line',
-            link: '/docs/commandLine.md',
+            link: '/en-us/docs/commandLine.html',
           },
           {
             title: 'Write markdown',
-            link: '/docs/doc.md',
+            link: '/en-us/docs/doc.html',
           },
           {
             title: 'Add docs',
-            link: '/docs/addDoc.md',
+            link: '/en-us/docs/addDoc.html',
           },
           {
             title: 'Add blog',
-            link: '/docs/addBlog.md',
+            link: '/en-us/docs/addBlog.html',
           },
           {
             title: 'Internationalization',
-            link: '/docs/i18n.md',
+            link: '/en-us/docs/i18n.html',
           },
           {
             title: 'Redirect',
-            link: '/docs/redirect.md',
+            link: '/en-us/docs/redirect.html',
           },
           {
             title: 'Custom Style',
-            link: '/docs/customStyle.md',
+            link: '/en-us/docs/customStyle.html',
           },
         ],
       },
@@ -65,19 +65,19 @@ export default {
         children: [
           {
             title: '安装',
-            link: '/docs/installation.md',
+            link: '/zh-cn/docs/installation.html',
           },
           {
             title: '准备',
-            link: '/docs/preparation.md',
+            link: '/zh-cn/docs/preparation.html',
           },
           {
             title: '创建站点',
-            link: '/docs/create.md',
+            link: '/zh-cn/docs/create.html',
           },
           {
             title: '发布站点',
-            link: '/docs/publish.md',
+            link: '/zh-cn/docs/publish.html',
           },
         ],
       },
@@ -86,31 +86,31 @@ export default {
         children: [
           {
             title: '命令行使用',
-            link: '/docs/commandLine.md',
+            link: '/zh-cn/docs/commandLine.html',
           },
           {
             title: '文档编写',
-            link: '/docs/doc.md',
+            link: '/zh-cn/docs/doc.html',
           },
           {
             title: '添加文档',
-            link: '/docs/addDoc.md',
+            link: '/zh-cn/docs/addDoc.html',
           },
           {
             title: '添加博客',
-            link: '/docs/addBlog.md',
+            link: '/zh-cn/docs/addBlog.html',
           },
           {
             title: '国际化',
-            link: '/docs/i18n.md',
+            link: '/zh-cn/docs/i18n.html',
           },
           {
             title: '重定向',
-            link: '/docs/redirect.md',
+            link: '/zh-cn/docs/redirect.html',
           },
           {
             title: '自定义样式',
-            link: '/docs/customStyle.md',
+            link: '/zh-cn/docs/customStyle.html',
           },
         ],
       },

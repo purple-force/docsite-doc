@@ -1,0 +1,4 @@
+{
+  "filename": "installation.md",
+  "__html": "<h2>安装</h2>\n<p><code>docsite</code>用于根据markdown文档快速搭建静态站点。</p>\n<ol>\n<li>确保安装的<a href=\"https://nodejs.org/en/download/\">node</a>版本满足如下要求：<code>node &gt;= 8.6.0</code></li>\n<li>执行<code>npm install docsite -g</code>执行全局安装</li>\n</ol>\n<h2>验证安装</h2>\n<p>在终端中执行 <code>docsite -V</code>，能够显示当前安装的<code>docsite</code>版本，则表示安装成功。</p>\n"
+}

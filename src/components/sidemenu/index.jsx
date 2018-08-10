@@ -20,7 +20,7 @@ export default class SideMenu extends React.Component {
   }
 
   render() {
-    const { dataSource, location } = this.props;
+    const { dataSource } = this.props;
     const { menuBodyVisible } = this.state;
     const cls = classnames({
       sidemenu: true,
@@ -33,7 +33,7 @@ export default class SideMenu extends React.Component {
     return (
       <div className={cls}>
         <div onClick={this.toggleMenuBody} className="sidemenu-toggle">
-          <img src={menuBodyVisible ? 'https://img.alicdn.com/tfs/TB1I5itXQyWBuNjy0FpXXassXXa-200-200.png' : 'https://img.alicdn.com/tfs/TB1E6apXHGYBuNjy0FoXXciBFXa-200-200.png'}/>
+          <img src={menuBodyVisible ? 'https://img.alicdn.com/tfs/TB1I5itXQyWBuNjy0FpXXassXXa-200-200.png' : 'https://img.alicdn.com/tfs/TB1E6apXHGYBuNjy0FoXXciBFXa-200-200.png'} />
         </div>
         <ul>
           {
@@ -44,7 +44,7 @@ export default class SideMenu extends React.Component {
                   {data.title}
                   </span>
                   <ul>
-                    {data.children.map((item, j) => <Item item={item} key={j} toggleMenuBody={this.toggleMenuBody} location={location} />)}
+                    {data.children.map((item, j) => <Item item={item} key={j} toggleMenuBody={this.toggleMenuBody} />)}
                   </ul>
                 </li>
               );

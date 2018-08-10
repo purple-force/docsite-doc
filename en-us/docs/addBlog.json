@@ -1,0 +1,4 @@
+{
+  "filename": "addBlog.md",
+  "__html": "<h2>Add blog</h2>\n<h3>Where</h3>\n<p>According to the language version of the document, put <code>zh-cn</code> or <code>en-us</code> in the <code>blog</code> directory, which can be one-level or multi-level directories.</p>\n<h3>Configuration of Blog list page</h3>\n<p>After the document is placed in the directory of the corresponding language, it needs to be configured in <code>site_config/blog.js</code>. The <code>link</code> field is used to configure the access path in the format of <code>/blog/path-to-the-md</code>. Note that this path does not include the language path (<code>zh-cn</code> or <code>en-us</code>). .</p>\n<p>For example, if a blog is stored in <code>root_directory/blog/en-us/demo/xxx.md</code>, then the configuration value of the <code>link</code> field is <code>/blog/demo/xxx.md</code>.</p>\n"
+}

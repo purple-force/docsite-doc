@@ -1,0 +1,4 @@
+{
+  "filename": "publish.md",
+  "__html": "<h2>发布站点</h2>\n<blockquote>\n<p>至此，整个站点的开发已经完成，在项目根目录下执行<code>docsite build</code>进行项目构建。</p>\n</blockquote>\n<h3>站点托管</h3>\n<p>你可以将站点托管在github pages上或者自己的服务器上。</p>\n<h4>github pages托管</h4>\n<p>在github上新建仓库，将项目代码上传至仓库中。打开项目的github页面，选择<code>Setting</code>面板，如下所示：\n<img src=\"https://img.alicdn.com/tfs/TB1rbTHxXGWBuNjy0FbXXb4sXXa-1600-134.png\" alt=\"\"></p>\n<p>转到<code>GitHuo Pages</code>版面，选择<code>Source</code>后点击<code>Save</code>，会给出站点的访问地址，访问该地址即可看到你的站点。</p>\n<p><img src=\"https://img.alicdn.com/tfs/TB1bNegxDtYBeNjy1XdXXXXyVXa-1612-1296.png\" alt=\"\"></p>\n<h4>服务器托管</h4>\n<p>将项目中的<code>build</code>目录、<code>img</code>目录、<code>index.html</code>及其他图片资源放置在服务器中即可。</p>\n"
+}

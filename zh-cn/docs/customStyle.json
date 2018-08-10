@@ -1,0 +1,4 @@
+{
+  "filename": "customStyle.md",
+  "__html": "<h2>自定义样式</h2>\n<p>自定义样式分为整个站点的自定义和文档展示风格的自定义。</p>\n<h3>站点自定义</h3>\n<p><code>src</code>目录下的<code>variables.scss</code>文件中，定义了一些用于控制站点整体显示风格的一些scss变量。通过修改这些变量，能够获得不同风格的站点。</p>\n<p>当然，如果这样还觉得不满足需求，可以进入到每个具体的页面的样式文件中去修改。</p>\n<h3>文档展示风格自定义</h3>\n<p><code>src</code>目录下的<code>markdown.scss</code>文件中，定义了文档展示风格的样式。分为两部分，文档的展示和代码高亮的展示。</p>\n<ul>\n<li>文档的展示</li>\n</ul>\n<p>默认采用github风格<a href=\"https://github.com/sindresorhus/github-markdown-css\">https://github.com/sindresorhus/github-markdown-css</a>，如果想要其他风格，请修改<code>markdown.scss</code>文件。</p>\n<ul>\n<li>代码高亮</li>\n</ul>\n<p>在<a href=\"https://highlightjs.org/static/demo/\">https://highlightjs.org/static/demo/</a>中去选择喜爱的高亮配色，然后根据选择后的主题名称，在<a href=\"https://github.com/isagalaev/highlight.js/tree/master/src/styles\">https://github.com/isagalaev/highlight.js/tree/master/src/styles</a>中复制对应的样式文件到<code>markdown.scss</code>中即可。</p>\n"
+}

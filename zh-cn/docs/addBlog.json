@@ -1,0 +1,4 @@
+{
+  "filename": "addBlog.md",
+  "__html": "<h2>添加博客</h2>\n<h3>放置位置</h3>\n<p>根据文档对应的语言版本，放入<code>blog</code>目录下的<code>zh-cn</code>或者<code>en-us</code>，可以是一层或者多层目录。</p>\n<h3>博客列表页配置</h3>\n<p>文档放入对应语言的目录中后，需要在<code>site_config/blog.js</code>中配置。其中的<code>link</code>字段用于配置访问地址，格式为<code>/blog/path-to-the-md</code>，需要注意的是这个路径不要包括语言路径（<code>zh-cn</code>或<code>en-us</code>）。</p>\n<p>例如，某个博客的存放位置为<code>root_directory/blog/en-us/demo/xxx.md</code>，那么<code>link</code>字段的配置值为<code>/blog/demo/xxx.md</code>。</p>\n"
+}

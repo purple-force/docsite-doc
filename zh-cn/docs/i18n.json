@@ -1,0 +1,4 @@
+{
+  "filename": "i18n.md",
+  "__html": "<h2>国际化</h2>\n<p>国际化分为两部分，分别为markdown文档的国际化和站点其余部分的国际化。</p>\n<h3>markdown文档的国际化</h3>\n<p>markdown文档主要分为说明文档和博客文档。这两种类型文档的国际化处理方式是类似的，说明文档按照中英文版本分别放入<code>docs</code>目录下的<code>zh-cn</code>和<code>en-us</code>目录中。博客文档按照中英文版本分别放入<code>blog</code>目录下的<code>zh-cn</code>和<code>en-us</code>目录中。</p>\n<h3>站点其余部分的国际化</h3>\n<p>在<code>site_config</code>目录中，根据中英文版本分别对应着<code>zh-cn</code>和<code>en-us</code>字段，所有页面相关的文案均需配置在这两个字段下。</p>\n"
+}

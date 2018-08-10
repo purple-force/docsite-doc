@@ -1,18 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { autobind } from 'core-decorators';
 import classnames from 'classnames';
 
 export default class Item extends React.Component {
   constructor(props) {
     super(props);
-    const { item, location } = props;
+    const { item } = props;
     const hasChildren = item.children && item.children.length;
     let opened = props.item.opened;
     if (hasChildren) {
       if (opened === undefined) {
         // 未配置展开，则是否展开由是否选中决定
-        opened = item.children.find(child => child.link === location.pathname);
+        opened = item.children.find(child => `${window.rootPath}${child.link}` === window.location.pathname);
       }
     } else {
       opened = false;
@@ -45,12 +44,12 @@ export default class Item extends React.Component {
             className={classnames({
               'menu-item': true,
               'menu-item-level-3': true,
-              'menu-item-selected': item.link === this.props.location.pathname,
+              'menu-item-selected': `${window.rootPath}${item.link}` === window.location.pathname,
             })}
             key={index}
             onClick={this.onItemClick}
           >
-            <Link to={item.link}>{item.title}</Link>
+            <a href={`${window.rootPath}${item.link}`} target={item.target || '_self'}>{item.title}</a>
           </li>
         ))
       }
@@ -59,16 +58,16 @@ export default class Item extends React.Component {
   }
 
   render() {
-    const { item, location } = this.props;
+    const { item } = this.props;
     const hasChildren = item.children && item.children.length;
     const { opened } = this.state;
     const cls = classnames({
       'menu-item': true,
       'menu-item-level-2': true,
-      'menu-item-selected': item.link === location.pathname,
+      'menu-item-selected': `${window.rootPath}${item.link}` === window.location.pathname,
     });
     const style = {
-      height: opened ? (36 * item.children.length) + 48 : 48,
+      height: opened ? 36 * (item.children.length + 1) : 36,
       overflow: 'hidden',
     };
     if (hasChildren) {
@@ -86,7 +85,7 @@ export default class Item extends React.Component {
     }
     return (
       <li style={style} className={cls} onClick={this.onItemClick}>
-        <Link to={item.link}>{item.title}</Link>
+        <a href={`${window.rootPath}${item.link}`} target={item.target || '_self'}>{item.title}</a>
       </li>
     );
   }

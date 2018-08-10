@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="preparation" />
+	<meta name="description" content="preparation" />
+	<!-- 网页标签标题 -->
+	<title>preparation</title>
+	<link rel="shortcut icon" href="/img/docsite.ico"/>
+	<link rel="stylesheet" href="/build/documentation.css" />
+</head>
+<body>
+	<div id="root"><div class="documentation-page" data-reactroot="" data-reactid="1" data-react-checksum="378970907"><header class="header-container header-container-normal" data-reactid="2"><div class="header-body" data-reactid="3"><a href="/en-us/docs/installation.html" data-reactid="4"><img class="logo" src="/img/docsite.png" data-reactid="5"/></a><span class="language-switch language-switch-normal" data-reactid="6">中</span><div class="header-menu" data-reactid="7"><img class="header-menu-toggle" src="/img/system/menu_gray.png" data-reactid="8"/><ul data-reactid="9"><li class="menu-item menu-item-normal menu-item-normal-active" data-reactid="10"><a href="/en-us/docs/installation.html" data-reactid="11">DOCS</a></li></ul></div></div></header><div class="bar" data-reactid="12"><div class="bar-body" data-reactid="13"><img src="/img/system/docs.png" class="front-img" data-reactid="14"/><span data-reactid="15">Documentation</span><img src="/img/system/docs.png" class="back-img" data-reactid="16"/></div></div><section class="content-section" data-reactid="17"><div class="sidemenu" data-reactid="18"><div class="sidemenu-toggle" data-reactid="19"><img src="https://img.alicdn.com/tfs/TB1E6apXHGYBuNjy0FoXXciBFXa-200-200.png" data-reactid="20"/></div><ul data-reactid="21"><li class="menu-item menu-item-level-1" data-reactid="22"><span data-reactid="23">Quick start</span><ul data-reactid="24"><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="25"><a href="/en-us/docs/installation.html" target="_self" data-reactid="26">Installation</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="27"><a href="/en-us/docs/preparation.html" target="_self" data-reactid="28">Preparation</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="29"><a href="/en-us/docs/create.html" target="_self" data-reactid="30">Create site</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="31"><a href="/en-us/docs/publish.html" target="_self" data-reactid="32">Publish site</a></li></ul></li><li class="menu-item menu-item-level-1" data-reactid="33"><span data-reactid="34">Detail</span><ul data-reactid="35"><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="36"><a href="/en-us/docs/commandLine.html" target="_self" data-reactid="37">Command line</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="38"><a href="/en-us/docs/doc.html" target="_self" data-reactid="39">Write markdown</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="40"><a href="/en-us/docs/addDoc.html" target="_self" data-reactid="41">Add docs</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="42"><a href="/en-us/docs/addBlog.html" target="_self" data-reactid="43">Add blog</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="44"><a href="/en-us/docs/i18n.html" target="_self" data-reactid="45">Internationalization</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="46"><a href="/en-us/docs/redirect.html" target="_self" data-reactid="47">Redirect</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="48"><a href="/en-us/docs/customStyle.html" target="_self" data-reactid="49">Custom Style</a></li></ul></li></ul></div><div class="doc-content markdown-body" data-reactid="50"><h2>Preparation</h2>
+<p>After successfully installing <code>docsite</code>,go to the project root directory and execute <code>docsite init</code>. The generated directory is as follows:</p>
+<pre><code>|-- Project root
+    |-- .babelrc
+    |-- .docsite
+    |-- .eslintrc
+    |-- .gitignore
+    |-- README.md
+    |-- gulpfile.js
+    |-- index.html
+    |-- package-lock.json
+    |-- package.json
+    |-- webpack.config.js
+    |-- blog
+    |   |-- en-us
+    |   |   |-- blog1.md
+    |   |   |-- blog2.md
+    |   |   |-- blog3.md
+    |   |   |-- blog4.md
+    |   |   |-- blog5.md
+    |   |   |-- blog6.md
+    |   |   |-- blog7.md
+    |   |-- zh-cn
+    |       |-- blog1.md
+    |       |-- blog2.md
+    |       |-- blog3.md
+    |       |-- blog4.md
+    |       |-- blog5.md
+    |       |-- blog6.md
+    |       |-- blog7.md
+    |-- docs
+    |   |-- en-us
+    |   |   |-- demo1.md
+    |   |   |-- demo2.md
+    |   |   |-- dir
+    |   |   |   |-- demo3.md
+    |   |   |-- img
+    |   |       |-- brhtqqzh.jpeg
+    |   |-- zh-cn
+    |       |-- demo1.md
+    |       |-- demo2.md
+    |       |-- dir
+    |       |   |-- demo3.md
+    |       |-- img
+    |           |-- brhtqqzh.jpeg
+    |-- img
+    |   |-- alibaba.png
+    |   |-- alibaba_hover.png
+    |   |-- architecture.png
+    |   |-- brhtqqzh.jpeg
+    |   |-- documents.png
+    |   |-- dubbo.ico
+    |   |-- dubbo_colorful.png
+    |   |-- dubbo_gray.png
+    |   |-- dubbo_white.png
+    |   |-- feature_hogh.png
+    |   |-- feature_loadbalances.png
+    |   |-- feature_maintenance.png
+    |   |-- feature_runtime.png
+    |   |-- feature_service.png
+    |   |-- feature_transpart.png
+    |   |-- issue.png
+    |   |-- mailinglist.png
+    |   |-- mailinglist_hover.png
+    |   |-- pullrequest.png
+    |   |-- quick_start.png
+    |   |-- segmentfault.png
+    |   |-- segmentfault_hover.png
+    |   |-- users_alibaba.png
+    |   |-- weibo.png
+    |   |-- weibo_hover.png
+    |   |-- system
+    |       |-- arrow_down.png
+    |       |-- arrow_right.png
+    |       |-- blog.png
+    |       |-- community.png
+    |       |-- docs.png
+    |       |-- docs_hover.png
+    |       |-- docs_normal.png
+    |       |-- menu_gray.png
+    |       |-- menu_white.png
+    |       |-- next.png
+    |       |-- prev.png
+    |-- md_json
+    |   |-- blog.json
+    |   |-- docs.json
+    |-- site_config
+    |   |-- blog.js
+    |   |-- community.jsx
+    |   |-- docs.js
+    |   |-- home.jsx
+    |   |-- site.js
+    |-- src
+    |   |-- index.jsx
+    |   |-- index.scss
+    |   |-- markdown.scss
+    |   |-- variables.scss
+    |   |-- components
+    |   |   |-- bar
+    |   |   |   |-- index.jsx
+    |   |   |   |-- index.scss
+    |   |   |-- footer
+    |   |   |   |-- index.jsx
+    |   |   |   |-- index.scss
+    |   |   |-- header
+    |   |   |   |-- index.jsx
+    |   |   |   |-- index.scss
+    |   |   |-- language
+    |   |   |   |-- index.jsx
+    |   |   |-- pageSlider
+    |   |   |   |-- index.jsx
+    |   |   |   |-- index.scss
+    |   |   |-- sidemenu
+    |   |   |   |-- index.jsx
+    |   |   |   |-- index.scss
+    |   |   |   |-- item.jsx
+    |   |   |-- slider
+    |   |       |-- index.jsx
+    |   |       |-- index.scss
+    |   |-- pages
+    |       |-- blog
+    |       |   |-- blogItem.jsx
+    |       |   |-- blogItem.scss
+    |       |   |-- index.jsx
+    |       |   |-- index.scss
+    |       |-- blogDetail
+    |       |   |-- index.jsx
+    |       |   |-- index.scss
+    |       |-- community
+    |       |   |-- contactItem.jsx
+    |       |   |-- contributorItem.jsx
+    |       |   |-- ecoItem.jsx
+    |       |   |-- eventCard.jsx
+    |       |   |-- index.jsx
+    |       |   |-- index.scss
+    |       |-- documentation
+    |       |   |-- index.jsx
+    |       |   |-- index.scss
+    |       |-- home
+    |           |-- featureItem.jsx
+    |           |-- index.jsx
+    |           |-- index.scss
+    |-- utils
+        |-- index.js
+</code></pre>
+<p>Now let's have a brief introduction to the main files and folders from up and down.</p>
+<h3>.docsite</h3>
+<p>An empty file that is used to determine if the current project has been initialized.</p>
+<h3>index.html</h3>
+<p>The hosting page of the project.</p>
+<h3>blog</h3>
+<p>The directory of the markdown document and related image resources of the blog ,which has two directories, for Chinese and English.</p>
+<h3>docs</h3>
+<p>The directory of the markdown document and related image resources of the docs ,which has two directories, for Chinese and English.</p>
+<h3>img</h3>
+<p>Store some images of site that are not used by markdown, where <code>system</code> stores some business-independent images.</p>
+<h3>md_json</h3>
+<p>Store the json file of parseing result of the markdown document.</p>
+<h3>site_config</h3>
+<p>Store Chinese and English configuration data for the entire site, where <code>site.js</code> configures some global data, including the top menu and the bottom footer portion. <code>home.jsx</code>, <code>docs.js</code>, <code>blog.js</code>, <code>community.jsx</code> correspond to the configuration of the home page, document page, blog list page, and community page respectively.</p>
+<h3>src</h3>
+<p>The location where the source code is stored, where <code>index.jsx</code> is the main entry file, <code>markdown.scss</code> stores the style file for the markdown document, <code>variable.scss</code> stores the public scss variable, <code>components</code> stores the public component, and <code>pages</code> stores the different pages of the site, <code>utils</code> stores some public methods.</p>
+<p>Now that the skeleton of the website is set up, you can customize the content and fill in the content.</p>
+</div></section></div></div>
+	<script src="https://f.alicdn.com/react/15.4.1/react-with-addons.min.js"></script>
+	<script src="https://f.alicdn.com/react/15.4.1/react-dom.min.js"></script>
+	<script>
+		window.rootPath = '';
+  </script>
+	<script src="/build/documentation.js"></script>
+</body>
+</html>

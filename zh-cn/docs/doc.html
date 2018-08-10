@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="doc" />
+	<meta name="description" content="doc" />
+	<!-- 网页标签标题 -->
+	<title>doc</title>
+	<link rel="shortcut icon" href="/img/docsite.ico"/>
+	<link rel="stylesheet" href="/build/documentation.css" />
+</head>
+<body>
+	<div id="root"><div class="documentation-page" data-reactroot="" data-reactid="1" data-react-checksum="474303951"><header class="header-container header-container-normal" data-reactid="2"><div class="header-body" data-reactid="3"><a href="/zh-cn/docs/installation.html" data-reactid="4"><img class="logo" src="/img/docsite.png" data-reactid="5"/></a><span class="language-switch language-switch-normal" data-reactid="6">En</span><div class="header-menu" data-reactid="7"><img class="header-menu-toggle" src="/img/system/menu_gray.png" data-reactid="8"/><ul data-reactid="9"><li class="menu-item menu-item-normal menu-item-normal-active" data-reactid="10"><a href="/zh-cn/docs/installation.html" data-reactid="11">文档</a></li></ul></div></div></header><div class="bar" data-reactid="12"><div class="bar-body" data-reactid="13"><img src="/img/system/docs.png" class="front-img" data-reactid="14"/><span data-reactid="15">文档</span><img src="/img/system/docs.png" class="back-img" data-reactid="16"/></div></div><section class="content-section" data-reactid="17"><div class="sidemenu" data-reactid="18"><div class="sidemenu-toggle" data-reactid="19"><img src="https://img.alicdn.com/tfs/TB1E6apXHGYBuNjy0FoXXciBFXa-200-200.png" data-reactid="20"/></div><ul data-reactid="21"><li class="menu-item menu-item-level-1" data-reactid="22"><span data-reactid="23">快速开始</span><ul data-reactid="24"><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="25"><a href="/zh-cn/docs/installation.html" target="_self" data-reactid="26">安装</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="27"><a href="/zh-cn/docs/preparation.html" target="_self" data-reactid="28">准备</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="29"><a href="/zh-cn/docs/create.html" target="_self" data-reactid="30">创建站点</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="31"><a href="/zh-cn/docs/publish.html" target="_self" data-reactid="32">发布站点</a></li></ul></li><li class="menu-item menu-item-level-1" data-reactid="33"><span data-reactid="34">详细教程</span><ul data-reactid="35"><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="36"><a href="/zh-cn/docs/commandLine.html" target="_self" data-reactid="37">命令行使用</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="38"><a href="/zh-cn/docs/doc.html" target="_self" data-reactid="39">文档编写</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="40"><a href="/zh-cn/docs/addDoc.html" target="_self" data-reactid="41">添加文档</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="42"><a href="/zh-cn/docs/addBlog.html" target="_self" data-reactid="43">添加博客</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="44"><a href="/zh-cn/docs/i18n.html" target="_self" data-reactid="45">国际化</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="46"><a href="/zh-cn/docs/redirect.html" target="_self" data-reactid="47">重定向</a></li><li style="height:36px;overflow:hidden;" class="menu-item menu-item-level-2" data-reactid="48"><a href="/zh-cn/docs/customStyle.html" target="_self" data-reactid="49">自定义样式</a></li></ul></li></ul></div><div class="doc-content markdown-body" data-reactid="50"><h2>文档编写</h2>
+<h3>元数据</h3>
+<p>markdown文件均支持在文档顶部自定义元数据，顶部的<code>---</code>（至少三个<code>-</code>）之间的数据会被认为是元数据，一个key占用一行。这些数据解析后会对应存放在<code>md_json</code>文件夹下，blog的文档对应<code>blog.json</code>文件，docs下的文档对应<code>docs.json</code>文件，其中<code>filename</code>和<code>__html</code>为保留字段，请勿使用。</p>
+<pre><code>---
+key1: hello
+key2: world
+---
+</code></pre>
+<h3>路径</h3>
+<p>在编写markdown文档时，难免需要文档之间的相互引用。而相对地址的写法相比于绝对地址，对于站点内文档之间的引用显得更为便捷。</p>
+<p>当需要引用其他文档时，引用路径按照在项目目录的相对文件地址引用即可。</p>
+<p>同样的，当需要引用项目内的图片资源，引用路径同样是相对的文件地址。最终会被处理成正确的绝对地址。</p>
+</div></section></div></div>
+	<script src="https://f.alicdn.com/react/15.4.1/react-with-addons.min.js"></script>
+	<script src="https://f.alicdn.com/react/15.4.1/react-dom.min.js"></script>
+	<script>
+		window.rootPath = '';
+  </script>
+	<script src="/build/documentation.js"></script>
+</body>
+</html>
